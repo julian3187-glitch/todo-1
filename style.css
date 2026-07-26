@@ -1,0 +1,113 @@
+
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#add_btn{
+  color: #618764;
+  background: none;
+  border-style: none;
+  cursor: pointer;
+  
+}
+
+#delete_btn{
+  color: #618764;
+  background: none;
+  border-style: none;
+  cursor: pointer;
+}
+
+
+
+body {
+  color: #9CB080;
+  background-color: #273338;
+}
+
+h2{
+  font-family: monospace;
+  display: flex;
+  justify-self: center;
+}
+
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.input_field {
+  width: 20rem;
+  border: solid 2px rgb(126, 126, 126);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0px 50px;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  
+}
+
+
+@keyframes add_transition {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  
+}
+
+@keyframes delete_transition {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  
+}
+
+.delete_trans{
+  animation: delete_transition 0.4s ease-out forwards;
+}
+
+
+
+.list_text{
+  margin: auto;
+}
+
+
+ul {
+  padding: 10px 10px ;
+  margin: 0;
+}
+
+li {
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #2B5748;
+  display: flex;
+  padding: 5px;
+  margin: 8px;
+  justify-content: space-between;
+  justify-items: center;
+  border-radius: 8px;
+  animation: add_transition 0.4s ease-out forwards;
+}
