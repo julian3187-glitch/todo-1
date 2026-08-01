@@ -7,7 +7,7 @@ let add_btn = document.querySelector(".add_btn");
 
 
 
-let load_data = JSON.parse(localStorage.getItem("list")) || [ ];
+let load_data = JSON.parse(localStorage.getItem("list")) || [];
 
 load_data.forEach(function (item) {
   toDorender(item);
